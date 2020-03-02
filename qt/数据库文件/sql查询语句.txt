@@ -1,0 +1,10 @@
+
+
+select stu_name as '姓名',sex as '性别',num as '分数',sub_name as '科目',branch_name as '学院',major_name as '专业' from
+ study as a,subject as c ,mark as b,branch as d
+where a.stu_id = b.stu_id and b.sub_id = c.sub_id and d.branch_id = a.branch_id and a.stu_id = 6;
+
+
+select tea_name as '姓名',sex as "性别",job as '职称',sub_name as '科目'
+from subject as a,teacher as b
+where a.sub_id = b.sub_id;
